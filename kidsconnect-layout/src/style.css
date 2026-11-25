@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: #7A1F29; /* Темно-бордовый цвет шапки и кнопок */
+  --primary-hover: #5c161e;
+  --bg-body: #F4F5F6; /* Светло-серый фон */
+  --bg-card: #FFFFFF;
+  --text-main: #333333;
+  --text-muted: #888888;
+  --border-color: #E4E4E4;
+  
+  /* Цвета бейджей */
+  --badge-red-bg: #E57373;
+  --badge-red-text: #FFFFFF;
+  --badge-outline-border: #E57373;
+  --badge-outline-text: #E57373;
+  
+  /* Цвет тегов времени */
+  --tag-bg: #F5E6C8;
+  --tag-text: #7A5A1A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Кнопки */
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+.btn-primary:hover { background-color: var(--primary-hover); }
+
+.btn-outline {
+  background: white;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+}
+.btn-outline:hover { background: #f9f9f9; }
+
+/* Бейджи */
+.badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.badge-red { background: var(--badge-red-bg); color: var(--badge-red-text); }
+.badge-outline { 
+  background: transparent; 
+  border: 1px solid var(--badge-outline-border); 
+  color: var(--badge-outline-text); 
+}
